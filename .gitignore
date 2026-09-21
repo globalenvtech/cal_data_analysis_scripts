@@ -216,3 +216,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# my project structure
+/img
+/docs
+/data
+/bin/skp
+/bin/python/test.py
+
