@@ -51,3 +51,33 @@ It is assumed you are familiar with Python. If you do not have an IDE to execute
     <p align="center">
     <img src="./bin/python/img/get_start3_6.gif" alt="" style="width:80%; height:auto;"/>
     </p>
+
+3. Select the '02.lewisctr_hot_loops.py'. Run the script by pressing 'F5'. Select Python Debugger -> Python File. 
+    
+    <p align="center">
+    <img src="./bin/python/img/get_start7_8.gif" alt="" style="width:80%; height:auto;"/>
+    </p>
+
+4. You should get the following results from the execution. You have successfully executed the script.
+    ```
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Min Tsup (degF): 70.10600000000001, Max Tsup (degF):87.8, Avg Tsup (degF): 76.55688556395293, Med Tsup (degF): 75.506
+    Min Tsup (degC): 21.17, Max Tsup (degC):31.0, Avg Tsup (degC): 24.753825313307182, Med Tsup (degC): 24.17
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Heating season
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Min Tsup (degF): 70.10600000000001, Max Tsup (degF):80.096, Avg Tsup (degF): 73.36976277456647, Med Tsup (degF): 73.094
+    Min Tsup (degC): 21.17, Max Tsup (degC):26.72, Avg Tsup (degC): 22.983201541425817, Med Tsup (degC): 22.83
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Cooling season
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------
+    Min Tsup (degF): 73.292, Max Tsup (degF):87.8, Avg Tsup (degF): 79.75593815304241, Med Tsup (degF): 80.006
+    Min Tsup (degC): 22.94, Max Tsup (degC):31.0, Avg Tsup (degC): 26.531076751690225, Med Tsup (degC): 26.67
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------
+    {'overall': {'max': np.float64(31.0), 'min': np.float64(21.17), 'avg': np.float64(24.753825313307182), 'med': np.float64(24.17)}, 'htg_season': {'max': np.float64(26.72), 'min': np.float64(21.17), 'avg': np.float64(22.983201541425817), 'med': np.float64(22.83)}, 'clg_season': {'max': np.float64(31.0), 'min': np.float64(22.94), 'avg': np.float64(26.531076751690225), 'med': np.float64(26.67)}}
+    The max supply temp is 29.61 degC and the max return temp is 34.5 degC
+    The approach temperature is 22.055 degC, the neutral temperature is 10 degC
+    The approach temperature is 39.699 degF, the neutral temperature is 50.0 degF
+    ```
+
+5. You can explore and play around with the script and data from here. 
