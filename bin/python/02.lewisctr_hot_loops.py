@@ -9,7 +9,7 @@ import lewisctr_utils
 #==========================================================================================================================================================
 base_path = Path(__file__).parent.parent.parent
 data_path = Path.joinpath(base_path, 'data')
-folder_name = '2025_2026_may'
+folder_name = '2024_2025_may'
 grd_loop_path = Path.joinpath(data_path, f'ground_loop/{folder_name}/grd_loop_overall.csv')
 res_folderpath = Path.joinpath(data_path, f'ground_loop/{folder_name}/res_img')
 
@@ -21,17 +21,17 @@ linestyle_ls = ['solid', 'solid', 'solid']
 # color_ls = ['c', 'm']
 # linestyle_ls = ['solid', 'solid']
 
-start_yr = 2025
+start_yr = 2024
 start_mth = 5
 start_day = 3
-end_yr = 2026
+end_yr = 2025
 end_mth = 5
 end_day = 4
-tneu = 10 #degC neutral temperature of the borehole
-fall_sem = ['2025-09-01', '2025-12-22']
-spring_sem = ['2026-01-25', '2026-05-25']
-clg_season = ['2025-05-01', '2025-11-01']
-htg_season = ['2025-11-01', '2026-05-01']
+tneu = 14.1 #degC neutral temperature of the borehole
+fall_sem = ['2024-09-01', '2024-12-22']
+spring_sem = ['2025-01-25', '2025-05-25']
+clg_season = ['2024-05-01', '2024-11-01']
+htg_season = ['2024-11-01', '2025-05-01']
 date_format = '%Y-%m-%d'
 timezone = 'America/New_York'
 #==========================================================================================================================================================

@@ -55,7 +55,7 @@ def setup_graph():
     ax1.set_title(graph_title, fontsize=16)
     return fig, ax1, ax2
 
-def viz_all_lines(y1_datas, y2_datas, graph_props, res_path):
+def viz_all_lines(x_data, y1_datas, y2_datas, graph_props, res_path):
     fig, ax1, ax2 = setup_graph()
     for cnt, y1_data in enumerate(y1_datas):
         y2_data = y2_datas[cnt]
@@ -74,7 +74,7 @@ def viz_all_lines(y1_datas, y2_datas, graph_props, res_path):
     plt.show()
     plt.close(fig)
 
-def viz_line_seq(y1_datas, y2_datas, graph_props, res_folder):
+def viz_line_seq(x_data, y1_datas, y2_datas, graph_props, res_folder):
     
     for cnt, y1_data in enumerate(y1_datas):
         fig, ax1, ax2 = setup_graph()
@@ -107,8 +107,8 @@ def viz_line_seq(y1_datas, y2_datas, graph_props, res_folder):
 if not res_folder.exists():
     res_folder.mkdir()
 
-viz_all_lines(y1_datas, y2_datas, graph_props, res_path)
-viz_line_seq(y1_datas, y2_datas, graph_props, res_folder)
+viz_all_lines(x_data, y1_datas, y2_datas, graph_props, res_path)
+viz_line_seq(x_data, y1_datas, y2_datas, graph_props, res_folder)
 #==========================================================================================================================================================
 # endregion: Main
 #==========================================================================================================================================================

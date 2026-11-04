@@ -698,3 +698,43 @@ def cmm2cfm(cmm: float | int | pd.DataFrame) -> float | int | pd.DataFrame:
 def ton2btuh(ton: float | int | pd.DataFrame) -> float | int | pd.DataFrame:
     btuh = ton*12000
     return btuh
+
+def btu_per_hr_ft_degf_to_watt_per_mk(btu_per_hr_ft_degf: float):
+    watt = btu_per_hr_ft_degf * 1.730735
+    return watt
+
+def watt_per_mk_to_btu_per_hr_ft_degf(watt_per_mk: float):
+    btuh = watt_per_mk / 1.730735
+    return btuh
+
+def ft2_day_to_m2_day(ft2_day: float):
+    m2_day = ft2_day * 0.09290304
+    return m2_day
+
+def m2_day_to_ft2_day(m2_day: float):
+    ft2_day = m2_day / 0.09290304
+    return ft2_day
+
+def ft2meter(feet: float):
+    meter = feet * 0.3048
+    return meter
+
+def meter2ft(meter: float):
+    feet = meter / 0.3048
+    return feet
+
+def rankine2kelvin(rankine):
+    kelvin = rankine * 0.55555556
+    return kelvin
+
+def kelvin2rankine(kelvin):
+    rankine = kelvin / 0.55555556
+    return rankine
+
+def mjoules2kwh(mega_joules):
+    kwh = mega_joules * 0.2777777778
+    return kwh
+
+def kwh2mjoules(kwh):
+    mjoules = kwh / 0.2777777778
+    return mjoules
